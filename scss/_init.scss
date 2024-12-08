@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+/* Variable and function definitions */
+$fontEN: 'Blinker', sans-serif;
+$fontJP: 'M PLUS Rounded 1c', sans-serif;
+
+$colorBase:     #424c66;
+$colorMain:     #f0f0f0;
+$colorAccent:   #e1eb7b;
+$colorBlack:    #303030;
+$colorWhite:    #f0f0f0;
+
+$colorTwitter:  #55acee;
+$colorFacebook: #315096;
+$colorLINE:     #00c300;
+
+$tablet: 1000px; // Tablet
+$phone:   550px; // Phone
+$se:      350px; // SE
+
+@mixin mediaQuery($breakpoint: $phone) {
+  @media (max-width: ($breakpoint)) {
+    @content;
+  }
+}
